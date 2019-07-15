@@ -32,6 +32,12 @@
   color: #007bff;
 }
 
+.gray-text {
+  color: #585858;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -74,7 +80,6 @@ a:link {
 
 a:hover {
   text-decoration: underline;
-  font-weight: 600;
   color: #007bff;
 }
 
