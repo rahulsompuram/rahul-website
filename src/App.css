@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
 }
 
 .App-header {
@@ -10,6 +12,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
 }
 
 .masthead {
