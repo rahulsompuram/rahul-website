@@ -38,7 +38,7 @@
 
 .gray-text {
   color: #585858;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
 }
 
@@ -48,9 +48,22 @@
 }
 
 .connect {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   color: #585858;
+}
+
+.black-text {
+  color: #1A1A1A;
+
+}
+
+.gray-text {
+  color: #A1A3A6;
+}
+
+.orange-text {
+  color: #ff8400;
 }
 
 small {
@@ -68,27 +81,127 @@ h3 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #585858;
 }
 
 a {
   color: #007bff;
+  text-decoration: none;
+  position: relative;
 }
 
-a:link {
+#work:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #007bff;
+}
+
+/* Rahul blue underline */
+#underline {
+  color: #007bff;
+  text-decoration: none;
+  position: relative;
+}
+
+#underline:link {
   text-decoration: none;
   color: #007bff;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: #007bff;
+#underline:after {
+  border-radius: 2em;
+  border-top: .2em solid #007bff;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: 0em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1);
 }
 
-#name:hover {
-  text-decoration: underline;
-  font-weight: 700;
-  color: #007bff;
+#underline:hover:after {
+  right: 0;
+}
+
+/* Green underline */
+#underline-green {
+  color: #6BE0BF;
+  text-decoration: none;
+  position: relative;
+}
+
+#underline-green:link {
+  text-decoration: none;
+  color: #6BE0BF;
+}
+
+#underline-green:after {
+  border-radius: 2em;
+  border-top: .2em solid #6BE0BF;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: 0em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1);
+}
+
+#underline-green:hover:after {
+  right: 0;
+}
+
+/* Pink underline */
+#underline-pink {
+  color: #EAA3A2;
+  text-decoration: none;
+  position: relative;
+}
+
+#underline-pink:link {
+  text-decoration: none;
+  color: #EAA3A2;
+}
+
+#underline-pink:after {
+  border-radius: 2em;
+  border-top: .2em solid #EAA3A2;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: 0em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1);
+}
+
+#underline-pink:hover:after {
+  right: 0;
+}
+
+/* Purple underline */
+#underline-purple {
+  color: #4F52C3;
+  text-decoration: none;
+  position: relative;
+}
+
+#underline-purple:link {
+  text-decoration: none;
+  color: #4F52C3;
+}
+
+#underline-purple:after {
+  border-radius: 2em;
+  border-top: .2em solid #4F52C3;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: 0em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1);
+}
+
+#underline-purple:hover:after {
+  right: 0;
 }
