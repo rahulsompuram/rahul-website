@@ -87,7 +87,7 @@ export default class App extends React.Component {
                   <p style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>My career interests lie in <span style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}} className="gray-text">product management</span> and <span style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}} className="gray-text">software engineering</span>. I love connecting with fellow explorers, creators, and dreamers so please don't hesitate to reach out!</p>
                   <p style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}} className="connect"><span><a id="underline" href="https://www.linkedin.com/in/rahulsompuram" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>, <span><a id="underline" href="https://github.com/rahulsompuram" target="_blank" rel="noopener noreferrer">Github</a></span>, <span><a id="underline" href="mailto:me@rahulsompuram.com">Email</a></span></p>
                 </div>
-                <div style={{ paddingTop: 25, paddingBottom: 25, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ paddingTop: 5, paddingBottom: 25, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 style={{ fontStyle: "italic", fontWeight: 600, fontFamily: 'Inter', color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>Currently listening to: <span style={{ fontWeight: 500 }}>Feel (feat. Lianne La Havas) - Jacob Collier</span></h4>
                 </div>
               </div>
