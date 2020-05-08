@@ -2,6 +2,7 @@
   "name": "rahul-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rahulsompuram.com",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -9,6 +10,8 @@
     "typeit": "^6.0.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

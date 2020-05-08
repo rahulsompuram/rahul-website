@@ -21,7 +21,7 @@ export default class Work extends React.Component {
   render() {
     return (
       <div className="main-container" style={{ paddingRight: 25, paddingLeft: 25 }}>
-        <div className="work" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
           <div style={{ alignSelf: 'center', fontFamily: 'Muli', fontWeight: 700, fontSize: 24 }}>
             <h2><span className="blue-text">some work</span></h2>
           </div>
@@ -81,7 +81,7 @@ export default class Work extends React.Component {
           <div style={{ paddingBottom: 50 }}>
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
               <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700  }}>VidSearch</h1>
-              <img src={award} alt="award" height='30' width='30' />
+              <img src={award} alt="award" height='25' width='25' />
             </div>
             <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A web app that gives users CTRL-F functionality for videos.</h4>
             <img src={vidsearch} alt="VidSearch" height='100%' width='100%' />

@@ -4,7 +4,6 @@ import Work from './Work.js';
 import TypeIt from 'typeit';
 import sun from './sun.png';
 import moon from './moon.png';
-import song from './song.mp3';
 
 export default class App extends React.Component {
 
@@ -47,7 +46,8 @@ export default class App extends React.Component {
         {
           this.state.isWorkClicked ?
             <div>
-              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
+              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+                <h3 height='30' width='30'/>
                 <a href="#" onClick={this.onWorkClick}>
                   <h3 id="work" className="blue-text" style={{ fontSize: 20, margin: 0, paddingTop: 25, paddingRight: 25 }}>
                     {this.state.isWorkClicked ? "about": "work"}
@@ -58,7 +58,7 @@ export default class App extends React.Component {
             </div>
               :
             <div>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
               <img style={{ paddingTop: 25, paddingLeft: 25 }} onClick={this.onNameClick} src={this.state.isClicked ? moon : sun} alt="sun" height='30' width='30' />
               <a href="#" onClick={this.onWorkClick}>
                 <h3 id="work" className="blue-text" style={{ fontSize: 20, margin: 0, paddingTop: 25, paddingRight: 25 }}>
@@ -88,10 +88,7 @@ export default class App extends React.Component {
                   <p style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}} className="connect"><span><a id="underline" href="https://www.linkedin.com/in/rahulsompuram" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>, <span><a id="underline" href="https://github.com/rahulsompuram" target="_blank" rel="noopener noreferrer">Github</a></span>, <span><a id="underline" href="mailto:me@rahulsompuram.com">Email</a></span></p>
                 </div>
                 <div style={{ paddingTop: 25, paddingBottom: 25, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <h4 style={{ fontWeight: 600, fontFamily: 'Inter', color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>Song of the week: <span style={{ fontWeight: 500, fontStyle: "italic" }}>Feel (feat. Lianne La Havas) - Jacob Collier</span></h4>
-                  <audio controls>
-                    <source src={song} type="audio/mpeg" />
-                  </audio>
+                  <h4 style={{ fontStyle: "italic", fontWeight: 600, fontFamily: 'Inter', color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>Currently listening to: <span style={{ fontWeight: 500 }}>Feel (feat. Lianne La Havas) - Jacob Collier</span></h4>
                 </div>
               </div>
             </div>
