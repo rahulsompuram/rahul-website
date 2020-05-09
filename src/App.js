@@ -46,10 +46,9 @@ export default class App extends React.Component {
         {
           this.state.isWorkClicked ?
             <div>
-              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
-                <h3 height='30' width='30'/>
+              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end' }}>
                 <a href="#" onClick={this.onWorkClick}>
-                  <h3 id="work" className="blue-text" style={{ fontSize: 20, margin: 0, paddingTop: 25, paddingRight: 25 }}>
+                  <h3 id="work" className="orange-text" style={{ fontWeight: 700, fontSize: 20, margin: 0, paddingTop: 25, paddingRight: 25 }}>
                     {this.state.isWorkClicked ? "about": "work"}
                   </h3>
                 </a>
@@ -58,10 +57,10 @@ export default class App extends React.Component {
             </div>
               :
             <div>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
               <img style={{ paddingTop: 25, paddingLeft: 25 }} onClick={this.onNameClick} src={this.state.isClicked ? moon : sun} alt="sun" height='30' width='30' />
               <a href="#" onClick={this.onWorkClick}>
-                <h3 id="work" className="blue-text" style={{ fontSize: 20, margin: 0, paddingTop: 25, paddingRight: 25 }}>
+                <h3 id="work" className="orange-text" style={{ fontWeight: 700, fontSize: 20, margin: 0, paddingTop: 25, paddingRight: 25 }}>
                   {this.state.isWorkClicked ? "about": "work"}
                 </h3>
               </a>
