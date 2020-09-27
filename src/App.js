@@ -4,6 +4,7 @@ import Work from './Work.js';
 import TypeIt from 'typeit';
 import sun from './sun.png';
 import moon from './moon.png';
+import Tilt from 'react-tilt';
 
 export default class App extends React.Component {
 
@@ -66,13 +67,15 @@ export default class App extends React.Component {
               </a>
             </div>
               <header className="App-header" style={{backgroundColor: this.state.isClicked ? "#243447" : "#FFFFFF"}}>
-                <div className="masthead">
+                <Tilt className="Tilt" options={{ max : 35 }}>
+                <div className="masthead Tilt-inner">
                   <h2>
                     <span id="name" className="blue-text">rahul sompuram</span>
                     <br/>
                     {/*<small style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>designer. developer. doer.</small>*/}
                   </h2>
                 </div>
+                </Tilt>
               </header>
               <div className="main-container" style={{ paddingRight: 25, paddingLeft: 25 }}>
                 <div className="about">
@@ -87,7 +90,7 @@ export default class App extends React.Component {
                   <p style={{color: this.state.isClicked ? "#FFFFFF" : "#585858"}} className="connect"><span><a id="underline" href="https://www.linkedin.com/in/rahulsompuram" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>, <span><a id="underline" href="https://github.com/rahulsompuram" target="_blank" rel="noopener noreferrer">Github</a></span>, <span><a id="underline" href="mailto:me@rahulsompuram.com">Email</a></span></p>
                 </div>
                 <div style={{ paddingTop: 5, paddingBottom: 25, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <h4 style={{ fontStyle: "italic", fontWeight: 600, fontFamily: 'Inter', color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>Currently listening to: <span style={{ fontWeight: 500 }}>All of the Lights - Alexander Lewis, Brasstracks</span></h4>
+                  <h4 style={{ fontStyle: "italic", fontWeight: 600, fontFamily: 'Inter', color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>Currently listening to: <span style={{ fontWeight: 500 }}>In The Morning - Jay Prince</span></h4>
                 </div>
               </div>
             </div>
