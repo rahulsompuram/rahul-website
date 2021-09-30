@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import storyapp from './story-app.png'
+import storyweb from './story-web.png'
 import tennis from './tennis.png';
 import pennbook from './pennbook.png';
 import breadcrumbs from './breadcrumbs.png';
@@ -25,6 +27,23 @@ export default class Work extends React.Component {
           <div style={{ alignSelf: 'center', fontFamily: 'Muli', fontWeight: 700, fontSize: 24 }}>
             <h2><span className="blue-text">some work</span></h2>
           </div>
+
+          <div style={{ paddingBottom: 50 }}>
+            <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700 }}>Story Health</h1>
+            <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A patient mobile app and physician web app to improve the patient experience and reduce physician burnout through partnership-centered care.</h4>
+            <img src={storyweb} alt="Story Health Web" height='100%' width='100%' />
+            <br/>
+            <img src={storyapp} alt="Story Health App" height='100%' width='100%' />
+            <br/>
+            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Tech stack: </span>React, SwiftUI, MongoDB, Apollo GraphQL, Cognito, S3, EC2</h4>
+            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Design: </span>Figma</h4>
+            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Purpose: </span>Startup</h4>
+            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Team size: </span>4</h4>
+            <a id="underline-story-purple" style={{ fontFamily: 'Inter', fontSize: 16, fontWeight: 700 }} href="https://www.youtube.com/watch?v=zc0Fg5phSG4" target="_blank" rel="noopener noreferrer">Patient app demo</a>
+            <br/><br/>
+            <a id="underline-story-blue" style={{ fontFamily: 'Inter', fontSize: 16, fontWeight: 700 }} href="https://storyhealth.webflow.io/?fbclid=IwAR0eM0KFv6RKy-nJqAwe7LQvB743eViAiiPteZYTeWpL9c_-xuX1b2XCA9Y" target="_blank" rel="noopener noreferrer">Learn more</a>
+          </div>
+
           <div style={{ paddingBottom: 50 }}>
             <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700 }}>Volleys & Returns</h1>
             <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A web app that allows tennis fans to improve their betting decisions.</h4>
@@ -56,7 +75,7 @@ export default class Work extends React.Component {
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Tech stack: </span>React Native (for v1), Swift5 (for v2), Firebase</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Design: </span>Figma</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Purpose: </span>Passion project and business venture</h4>
-            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Team size: </span>2</h4>
+            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Team size: </span>3</h4>
             <a id="underline-purple" style={{ fontFamily: 'Inter', fontSize: 16, fontWeight: 700 }} href="https://www.34st.com/article/2019/02/ego-rahul-sompuram-buzzhealth" target="_blank" rel="noopener noreferrer">Learn more</a>
           </div>
 
@@ -79,10 +98,11 @@ export default class Work extends React.Component {
           </div>
 
           <div style={{ paddingBottom: 50 }}>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+            {/* <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
               <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700  }}>VidSearch</h1>
               <img src={award} alt="award" height='25' width='25' />
-            </div>
+            </div> */}
+            <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700  }}>VidSearch</h1>
             <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A web app that gives users CTRL-F functionality for videos.</h4>
             <img src={vidsearch} alt="VidSearch" height='100%' width='100%' />
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Tech stack: </span>React, Express, Google Speech-to-Text API</h4>
