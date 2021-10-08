@@ -8,8 +8,6 @@ import breadcrumbs from './breadcrumbs.png';
 import vidsearch from './vidsearch.png';
 import stayhome from './stayhome.png';
 import raft from './raft.png';
-import award from './award.png';
-
 
 export default class Work extends React.Component {
 
@@ -30,12 +28,12 @@ export default class Work extends React.Component {
 
           <div style={{ paddingBottom: 50 }}>
             <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700 }}>Story Health</h1>
-            <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A patient mobile app and physician web app to improve the patient experience and reduce physician burnout through partnership-centered care.</h4>
-            <img src={storyweb} alt="Story Health Web" height='100%' width='100%' />
-            <br/>
+            <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A patient mobile app and physician web app to improve the patient experience and reduce physician burnout through collaborative care.</h4>
             <img src={storyapp} alt="Story Health App" height='100%' width='100%' />
             <br/>
-            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Tech stack: </span>React, SwiftUI, MongoDB, Apollo GraphQL, Cognito, S3, EC2</h4>
+            <img src={storyweb} alt="Story Health Web" height='100%' width='100%' />
+            <br/>
+            <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Tech stack: </span>React, SwiftUI, MongoDB, Express, Cognito, EC2</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Design: </span>Figma</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Purpose: </span>Startup</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Team size: </span>4</h4>
