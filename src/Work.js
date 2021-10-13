@@ -28,7 +28,7 @@ export default class Work extends React.Component {
 
           <div style={{ paddingBottom: 50 }}>
             <h1 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Muli', fontWeight: 700 }}>Story Health</h1>
-            <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A patient mobile app and physician web app to improve the patient experience and reduce physician burnout through collaborative care.</h4>
+            <h4 style={{ fontSize: 18, color: this.state.isClicked ? '#D3D3D3' : '#87898C', fontFamily: 'Inter', fontWeight: 600 }}>A patient mobile app and physician web app that's based on visual timelines and collaborative care.</h4>
             <img src={storyapp} alt="Story Health App" height='100%' width='100%' />
             <br/>
             <img src={storyweb} alt="Story Health Web" height='100%' width='100%' />
