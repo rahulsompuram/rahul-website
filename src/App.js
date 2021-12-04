@@ -4,6 +4,7 @@ import Work from './Work.js';
 import TypeIt from 'typeit';
 import sun from './sun.png';
 import moon from './moon.png';
+import jewelz from './jewelz.png';
 import Tilt from 'react-tilt';
 
 export default class App extends React.Component {
@@ -91,6 +92,7 @@ export default class App extends React.Component {
                 </div>
                 <div style={{ paddingTop: 5, paddingBottom: 25, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 style={{ fontStyle: "italic", fontWeight: 600, fontFamily: 'Inter', color: this.state.isClicked ? "#FFFFFF" : "#585858"}}>Currently listening to: <span style={{ fontWeight: 500 }}>JEWELZ - Anderson Paak</span></h4>
+                  <img style={{ borderRadius: 8, boxShadow: '0 3px 10px rgb(0 0 0 / 0.5)' }} src={jewelz} alt="Jewelz" height='50%' width='50%' />
                 </div>
               </div>
             </div>
