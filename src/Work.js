@@ -107,7 +107,6 @@ export default class Work extends React.Component {
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Purpose: </span>Horizons School of Technology hackathon</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Team size: </span>5</h4>
             <h4 style={{ color: this.state.isClicked ? "#FFFFFF" : "#585858", fontFamily: 'Inter', fontSize: 16, fontWeight: 500 }}><span style={{ fontWeight: 700 }}>Award: </span>2nd place for "Best Overall"</h4>
-            <a id="underline" style={{ fontFamily: 'Inter', fontSize: 16, fontWeight: 700 }} href="https://drive.google.com/file/d/18zbb3dnpaaiMsMQbcltOG27nVfbG2lag/view" target="_blank" rel="noopener noreferrer">Learn more</a>
           </div>
         </div>
       </div>
